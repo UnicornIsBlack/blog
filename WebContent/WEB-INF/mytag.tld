@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>control</shortname>
+
+	
+	
+	<tag>
+		<name>NewsListTaglib</name>
+		<tagclass>com.chai.blog.taglib.news.NewsListTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>NewsListAdminTaglib</name>
+		<tagclass>com.chai.blog.taglib.news.NewsListAdminTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	
+	
+	
+	<tag>
+		<name>ITListTaglib</name>
+		<tagclass>com.chai.blog.taglib.it.ITListTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>ITListAdminTaglib</name>
+		<tagclass>com.chai.blog.taglib.it.ITListAdminTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	
+	<tag>
+		<name>ArticleListTaglib</name>
+		<tagclass>com.chai.blog.taglib.article.ArticleListTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>ArticleListAdminTaglib</name>
+		<tagclass>com.chai.blog.taglib.article.ArticleListAdminTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	<tag>
+		<name>BookListTaglib</name>
+		<tagclass>com.chai.blog.taglib.book.BookListTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>BookListAdminTaglib</name>
+		<tagclass>com.chai.blog.taglib.book.BookListAdminTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	<tag>
+		<name>AdminListTaglib</name>
+		<tagclass>com.chai.blog.taglib.AdminListTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>HomeTaglib</name>
+		<tagclass>com.chai.blog.taglib.HomeTaglib</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>method</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>

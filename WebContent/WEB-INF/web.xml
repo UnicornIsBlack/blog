@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>blog</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<filter-name>charsetEncodingFilter</filter-name>
+		<filter-class>com.chai.blog.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>charsetEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.chai.blog.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>NewsAddServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.news.NewsAddServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>NewsAddServlet</servlet-name>
+   		<url-pattern>/NewsAddServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+    	<servlet-name>NewsEditServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.news.NewsEditServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>NewsEditServlet</servlet-name>
+   		<url-pattern>/NewsEditServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	
+ 	<servlet>
+    	<servlet-name>BookAddServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.book.BookAddServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>BookAddServlet</servlet-name>
+   		<url-pattern>/BookAddServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+    	<servlet-name>BookEditServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.book.BookEditServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>BookEditServlet</servlet-name>
+   		<url-pattern>/BookEditServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	
+ 	<servlet>
+    	<servlet-name>ArticleAddServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.article.ArticleAddServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>ArticleAddServlet</servlet-name>
+   		<url-pattern>/ArticleAddServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+    	<servlet-name>ArticleEditServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.article.ArticleEditServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>ArticleEditServlet</servlet-name>
+   		<url-pattern>/ArticleEditServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+    	<servlet-name>ITAddServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.it.ITAddServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>ITAddServlet</servlet-name>
+   		<url-pattern>/ITAddServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+    	<servlet-name>ITEditServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.it.ITEditServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>ITEditServlet</servlet-name>
+   		<url-pattern>/ITEditServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+    	<servlet-name>AdminAddServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.admin.AdminAddServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>AdminAddServlet</servlet-name>
+   		<url-pattern>/AdminAddServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+    	<servlet-name>AdminEditServlet</servlet-name>
+    	<servlet-class>com.chai.blog.servlet.admin.AdminEditServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>AdminEditServlet</servlet-name>
+   		<url-pattern>/AdminEditServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+
+
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>control</taglib-uri>
+			<taglib-location>/WEB-INF/mytag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+</web-app>

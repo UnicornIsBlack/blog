@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+.all {
+	min-width: 370px;
+}
+
+.mydiv {
+	position: absolute;
+	left: 40%;
+	top: 25%;
+	margin: 0 auto;
+}
+
+.wrap {
+	white-space: normal;
+	word-break: break-all;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	position: relative;
+	margin: 40px;
+	height: auto;
+}
+
+.content {
+	font-family: 楷体;
+	margin: 0px 0px 0px 10px;
+	border: solid 0px;
+	height: auto;
+}
+
+.text {
+	margin: 10px 0px 0px 0px;
+	border: solid 0px #0000FF;
+	height: auto;
+}
+
+.title {
+	font-size: 20px;
+	margin: 3px 0px 0px 0px;
+	border: solid 0px #0000FF;
+	height: auto;
+}
+
+.cont {
+	font-size: 20px;
+	margin: 3px 0px 0px 0px;
+	border: solid 0px #0000FF;
+	height: auto;
+}
+
+.func1 {
+	float: right;
+	width: 20%;
+	margin: 0px 0px 0px 0px;
+	border: solid 0px #0000FF;
+	height: auto;
+}
