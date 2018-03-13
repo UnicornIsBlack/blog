@@ -7,7 +7,7 @@ public class DatabaseConnection {
 	private Connection connection = null;
 	
 	private static final String Driver = "com.mysql.jdbc.Driver";
-	private static final String Url = "jdbc:mysql://119.29.186.126:3306/blog?user=root&password=chai&useUnicode=true&characterEncoding=utf-8";
+	private static final String Url = "jdbc:mysql://127.0.0.1:3306/blog?user=root&password=chai&useUnicode=true&characterEncoding=utf-8";
 	public DatabaseConnection() 
 	{
 
